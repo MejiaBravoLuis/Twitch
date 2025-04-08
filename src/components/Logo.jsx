@@ -1,4 +1,4 @@
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/EscudoPeque.svg'
 
 export const Logo = ({ text }) => {
     return (
