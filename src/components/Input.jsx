@@ -21,12 +21,12 @@ export const Input = ({
 
     return (
         <>
-            <div className="auth-for-label">
+            <div className="auth-form-label">
                 <span>{label}</span>
             </div>
             <div>
             {textArea ? (
-                <text
+                <textArea
                     type={type}
                     value={value}
                     onChange={handleValueChange}
@@ -42,9 +42,9 @@ export const Input = ({
                     onBlur={handleInputBlur}
                 />
             )}
-            <span className="auth-form-validation-message">
-                {showErrorMessage && validationMessage}
-            </span>
+                <span className="auth-form-validation-message">
+                    {showErrorMessage && validationMessage}
+                </span>
             </div>
         </>
     )

@@ -13,7 +13,7 @@ import {
 } from '../shared/validators'
 import { useRegister } from '../shared/hooks'
 
-export const Register = ({ switchHandler }) =>{
+export const Register = ({ switchAuthHandler }) =>{
 
     const { register, isLoading } = useRegister()
 
@@ -90,7 +90,7 @@ export const Register = ({ switchHandler }) =>{
         !formState.passwordConfir.isValid;
     
     return(
-        <div className = "login-container">
+        <div className = "register-container">
             <Logo text={'Register Kinal Cast'}/>
             <form className="auth-form">
                 <Input
@@ -104,11 +104,11 @@ export const Register = ({ switchHandler }) =>{
                     validationMessage={emailValidationMessage}
                 />
                 <Input
-                    field = 'username'
-                    label = 'Username'
-                    value = {formState.username.value}
+                    field='username'
+                    label='Username'
+                    value={formState.username.value}
                     onChangeHandler={handleInputValueChange}
-                    type = 'text'
+                    type='text'
                     onBlurHandler={handleInputValidationOnBlur}
                     showErrorMessage={formState.username.showError}
                     validationMessage={validateUsernameMessage}
@@ -137,7 +137,7 @@ export const Register = ({ switchHandler }) =>{
                     Register
                 </button>
             </form>
-            <span onClick={switchHandler} className='auth-form-switch-label'>
+            <span onClick={switchAuthHandler} className='auth-form-switch-label'>
                 Already Have an account dawg? Sign up
             </span>
         </div>
