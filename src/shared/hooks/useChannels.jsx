@@ -31,7 +31,7 @@ export const useChannels = () =>{
         setChannels({
             channels: channelsData.data.channels,
             followedChannels: channelsData.data.channels.filter(channel =>
-                followedChannelsData.data.followedChannels.include(channel.id)
+                followedChannelsData.data.followedChannels.includes(channel.id)
             )
         })
     }

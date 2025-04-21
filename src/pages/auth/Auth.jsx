@@ -17,7 +17,7 @@ export const Auth = () => {
         {isLogin ? (
           <Login switchAuthHandler={handleAuthPageToggle}/>
         ) : (
-          <Register switchHandler={handleAuthPageToggle}/>
+          <Register switchAuthHandler={handleAuthPageToggle}/>
         )}
     </div>
   )
