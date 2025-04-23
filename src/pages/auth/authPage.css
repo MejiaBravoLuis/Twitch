@@ -18,6 +18,10 @@
     height: auto;
     box-shadow: 10px 10px 10px #0b336b;
     padding: 25px;
+    
+    background-color: rgba(255, 255, 255, 0.1); /* semitransparente para mostrar el blur */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* para compatibilidad con Safari */
 }
  
 .register-container {
