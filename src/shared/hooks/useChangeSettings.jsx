@@ -4,7 +4,7 @@ import { getChannelSettings, updateChannelSettings } from "../../services";
 
 export const useChannelSettings = () =>{
 
-    const [ getChannelSettings, setChannelSettings ] = useState();
+    const [ channelSettings, setChannelSettings ] = useState();
 
     const fetchChannelSettings = async () => {
         const response = await getChannelSettings();
